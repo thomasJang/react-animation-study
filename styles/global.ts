@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import './antd-theme.less';
+import "./antd-theme.less";
 
 export const GlobalStyles = createGlobalStyle`
   .clearfix:before, .clearfix:after {
@@ -12,7 +12,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html, body{
-    height: 100%;
-    
+    height: 100%;  
+  }
+
+  [role="container"] {
+    max-width: 600px;
   }
 `;

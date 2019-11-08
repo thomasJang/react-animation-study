@@ -1,3 +1,3 @@
 # axui
 
-:octocat: react-multi-email
+:octocat: react-animation-study

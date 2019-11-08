@@ -2,7 +2,11 @@ import React, { useEffect, useReducer } from "react";
 import "styles/global";
 import { ISettings } from "common/interfaces";
 import { settingsReducer } from "store";
-import ContentBox from "components/ContentBox";
+import ParallaxBox from "components/ParallaxBox";
+import OverPackBox from "components/OverPackBox";
+import ParallaxTimelineBox from "components/ParallaxTimelineBox";
+import VisualBox from "components/VisualBox";
+import ParallaxTimelineBox2 from "components/ParallaxTimelineBox2";
 
 const initialSettings: ISettings = {
   width: 300,
@@ -20,34 +24,43 @@ const Home: React.FC = props => {
 
   return (
     <div>
-      <ContentBox
+      <VisualBox />
+      <ParallaxBox
         title="SECTION 1"
         style={{
-          height: 600,
-          background: "#ccc"
+          minHeight: 600,
+          background: "#f0f0f0"
         }}
       />
-      <ContentBox
+      <OverPackBox
         title="SECTION 2"
         style={{
-          height: 600,
+          minHeight: 600,
           background: "#fff"
         }}
       />
-      <ContentBox
+      <ParallaxTimelineBox
         title="SECTION 3"
         style={{
-          height: 600,
+          minHeight: 600,
           background: "#ccc"
         }}
       />
-      <ContentBox
+      <ParallaxTimelineBox2
         title="SECTION 4"
         style={{
-          height: 600,
+          minHeight: 600,
           background: "#fff"
         }}
       />
+      <ParallaxTimelineBox
+        title="SECTION 5"
+        style={{
+          minHeight: 600,
+          background: "#ccc"
+        }}
+      />
+      <div style={{ height: 500 }} />
     </div>
   );
 };
