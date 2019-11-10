@@ -26,13 +26,13 @@ const Style = styled.div`
 const ParallaxBox: React.FC<IProps> = ({ title, children, style }) => {
   return (
     <Style style={style}>
-      <div role="container" style={{ paddingRight: 200 }}>
+      <div role="container" style={{ paddingRight: 250 }}>
         <TweenOne
           key="0"
           animation={{ opacity: 1 }}
           style={{ opacity: 0, marginBottom: 10 }}
         >
-          <h1>Bali</h1>
+          <h1>Developer Circles Bali from Facebook</h1>
         </TweenOne>
 
         <p>

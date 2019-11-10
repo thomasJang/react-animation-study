@@ -43,7 +43,8 @@ const Home: React.FC = props => {
         title="SECTION 3"
         style={{
           minHeight: 600,
-          background: "#ccc"
+          background: "#3b579d",
+          color: "#fff"
         }}
       />
       <ParallaxTimelineBox2

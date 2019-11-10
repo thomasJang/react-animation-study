@@ -35,7 +35,7 @@ const ParallaxTimelineBox: React.FC<IProps> = ({ title, children, style }) => {
             animation={{ opacity: 1 }}
             style={{ opacity: 0, marginBottom: 10 }}
           >
-            <h1>{title}</h1>
+            <h1 style={{ color: style ? style.color : "" }}>{title}</h1>
           </TweenOne>
 
           <p>
